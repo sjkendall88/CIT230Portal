@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <!--Sets the language fo the webpage.-->
+        <!--Information regarding the setup of the page before it is loaded and the page title. -->
+    <head>
+        <!--Sets the charactors/text of the webpage-->
+    <meta charset="utf-8">
+        <!--Sets the user agent width settings to be defined by the viewing device.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- -->
+    <title>Semantic HTML5</title>
+    <meta name="Description" content="Webpage defining Semantic Elements"><!--Sets the page description for ereaders -->
+        <link rel="stylesheet" href="../styles/main.css"> <!--Calls the css script for page styling -->
+</head>
+
+<body>
+    <main>
+
+        <header><h1>This page is to help remeber the Semantic HTML5 tags!</h1></header>
+        <p>I have struggled to reconsiile the an internal conflict of the main tag and body tag.
+        Through the Mozilla developer documents returned from a google search. The "main" tag is for
+        the main part of the page content. The "body" tag is for the structure of the webpage.
+        (Forgot that for a bit.)</p>
+        <p> The h1-h6 are the same as formating the header tag</p>
+        <nav>
+            <h4>Navaigation</h4>
+            <p> Navagation helps to organize links to related pages or bookmarks on the page. </p>
+            <a href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+        </nav>
+
+        <section>
+            <p> Helps to separate the page content by themes. </p>
+            <h4>Section</h4>
+            <p>The section provides a warning that it lacks a heading in Validation.
+            <br>The h1-h6 tags count as header elements.</p>
+
+        </section>
+
+        <aside>
+
+            <h4>Aside</h4>
+            <p> Should only be used to hold a tangent to<br>
+                surrounding content. The aside tag does not require,<br>
+                nor is a warning provided, for a header when Validating. </p>
+
+        </aside>
+
+        <article>
+            <p> Is for content that is self contained and can stand alone. </p>
+            <h3>Article</h3>
+            The Article tag does provide a warning for a heading but not an error.
+
+        </article><br>
+
+        <figure>
+            <img src="https://thumbs.dreamstime.com/z/confused-lost-21433227.jpg" alt="lost and confused">
+            <figcaption><small>3D image of street signs with synonyms for confused</small></figcaption>
+            <p> Specifies self contained content like pictures, code listings, ect.
+            Alternately "picture" could be used but requires "source" tags and an ending "img" tag in case of compatibility issues. </p>
+
+        </figure>
+
+
+        <p>Time is used to add times and dates that user agents like calenders or phones can read. <br>
+        This is when I was working on the page.<time datetime="2018-05-13 12:44"></time></p>
+
+        <br>
+
+        <mark>Mark is used to highlight text as shown here.</mark>
+
+        <details><summary>Summary</summary>
+            <p>Summary is the heading tag of Details. Shows with or without information between the tags. Shows the details as part of a drop down list even without any css styling. The summary tags are similar to heading tags and label the section of the details.
+            Provides additional information that user can open and close.
+            struggling to figure out how to use the summary tag
+            Found a reference on W3schools for summary using <p> tag and came back with an error.
+            Details shows with or without information between the tags. Shows the details as part of a drop down list. Without any css styling.
+            </p>
+
+        </details><!--  -->
+
+        <footer>
+
+            <h3>Footer</h3>
+            <a href="#">Link to top</a>
+
+        </footer>
+
+    </main>
+
+    </body>
+
+</html>

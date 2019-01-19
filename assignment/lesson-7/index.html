@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Franklin City Weather</title>
+        <meta name="description" content="Franklin City Weather Site">
+        <link href="../../styles/normalization.css" rel="Stylesheet">
+        <link href="css/smallflex.css" rel="Stylesheet">
+        <link href="css/mediumflex.css" rel="Stylesheet">
+        <link href="css/largeflex.css" rel="Stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section id="headsect">
+                <h2>Franklin City Weather</h2>
+                <div>We bring the best weather!</div>
+            </section>
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="smallButton" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallerygrid.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Franklin Weather Site</h2>
+            <figure>
+                <img src="images/franklin-original.jpg" alt="franklin" srcset="images/FranklinSmall.jpg 300w, images/FranklinMedium.jpg 700w, images/FranklinLarge.jpg 1200w" sizes="95vw">
+            </figure>
+            <figure>
+                <img src="images/clouds-dark-moon-790181.jpg" alt="Moon shining behind clouds">
+            </figure>
+            <section>
+                <h3>Weather Summary</h3>
+                <div>
+                    <ul>
+                        <li>High: <span id="high">90</span>&deg;F</li>
+                        <li>Low: <span id="low">66</span>&deg;F</li>
+                        <li>Chance of Precipitation: 0 &#37;</li>
+                        <li>Wind: <span id="wSpeed">5</span> mph from the South-West</li>
+                        <li>Windchill: <span id="windchill">5</span>&deg;F</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Sunny</h2>
+                    <picture>
+                        <img src="images/active-activity-adventure-547116.jpg" alt="Sunny view from the Mountains">
+                    </picture>
+                </div>
+            </section>
+
+            <section class="forcast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="1/10">89&deg;F</td>
+                            <td id="2/10">87&deg;F</td>
+                            <td id="3/10">78&deg;F</td>
+                            <td id="4/10">75&deg;F</td>
+                            <td id="5/10">72&deg;F</td>
+                            <td id="6/10">72&deg;F</td>
+                            <td id="7/10">79&deg;F</td>
+                            <td id="8/10">83&deg;F</td>
+                            <td id="9/10">85&deg;F</td>
+                            <td id="10/10">89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h2>This Day in History!</h2>
+                <h3>On May 23, 1915 Italy declares war on Austria-Hungary</h3>
+                <img src="images/architectural-design-architecture-buildings-97905.jpg" alt="street view of Frankling">
+                <p>
+                    On this day in 1915, Italy declares war on Austria-Hungary, entering World War I on the side of the Allies—Britain, France and Russia
+                </p><br>
+                <p>
+                    When World War I broke out in the summer of 1914, Italy declared itself neutral in the conflict, despite its membership in the so-called Triple Alliance alongside Germany and Austria-Hungary since 1882. Over the course of the months that followed, Italy and its leaders weighed their options; wooed by both sides, they carefully considered how to gain the greatest benefit from participation in the war. The decision to join the fray on the side of the Allies was based largely on the assurances Italy received in the Treaty of London, signed in April 1915. By its terms, Italy would receive the fulfillment of its national dream: control over territory on its border with Austria-Hungary stretching from Trentino through the South Tyrol to Trieste. In addition, the Allies promised the Italians parts of Dalmatia and numerous islands along Austria-Hungary’s Adriatic coast; the Albanian port city of Vlore (Italian: Valona) and a central protectorate in Albania; and territory from the Ottoman Empire.
+                </p> <br>
+
+                <p>
+                    On May 23, 1915, Italy declared war on Austria-Hungary. The Italian declaration opened up a new front in World War I, stretching 600 kilometers—most of them mountainous—along Italy’s border with Austria-Hungary. Italy—which had become a unified nation only as recently as 1859—was, like Russia, not yet a fully industrialized power. It was certainly not prepared for large-scale warfare, and although it managed to mobilize 1.2 million men in the spring of 1915, it possessed equipment for just 732,000. Upon declaring war, the Italian army immediately advanced into the South Tyrol region and to the Isonzo River, where Austro-Hungarian troops met them with a stiff defense. The snowy and treacherous terrain made the region poorly suited to offensive operations, and after several quick Italian successes, combat settled into a stalemate.
+                </p> <br>
+
+                <p>
+                    By late 1917, the Austrians and Italians had fought no fewer than 11 battles along the Isonzo River, with negligible progress and heavy losses on both sides. In late October 1917, German intervention to help Austria-Hungary resulted in a spectacular victory over the Italians in the Battle of Caporetto (also known as the Twelfth Battle of the Isonzo), during which Italian forces suffered some 300,000 casualties (90 percent of which were prisoners) and were forced to retreat. The defeat sparked a crisis in Italy, prompting the dismissal of the army’s chief of staff, Luigi Cadorna, his replacement with Armando Diaz, and the formation of a coalition government under Prime Minister Vittorio Orlando. After Caporetto, Italy’s allies jumped in to offer increased assistance, as British and French—and later American—troops soon arrived in the region, and the Allies began to take back the initiative.
+                </p> <br>
+                <p>
+                    By the time fighting ended on the Italian front on November 4, 1918—a week before the general armistice—615,000 Italians had been killed in action or died of wounds sustained in World War I. In the ensuing peace negotiations in Paris, the Italian government struggled against great opposition from the other Allied leaders to see that they were given all they had been promised in the Treaty of London. At one point in the negotiations, the entire Italian delegation walked out of the peace conference, returning only days later. Though Italy would eventually receive control of the Tyrol and a permanent seat on the newly formed international peace-keeping organization, the League of Nations, many within the country were dissatisfied with their lot and continued to nurse resentments of the other Allied powers—resentments that would later drive the success of Benito Mussolini and his fascist movement.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <section>
+                Contact information placeholder
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy; 2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <a href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+        <script src="scripts/javascript.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/currentWeather.js">
+            </script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: .25em;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Playfair Display SC', serif;
+    background-image: url(../images/abstract-arctic-art-326240.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header, nav, main, footer {
+    max-width: 37.5em;
+}
+
+header {
+    padding-bottom: 2.5em;
+}
+header h1 {
+
+}
+header img {
+    float: left;
+    max-width: 50%;
+    height: auto;
+}
+header .subheading {}
+
+nav {
+    flex-wrap: nowrap;
+}
+nav button {
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    background-color: #A7D49D;
+}
+nav ul li a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    min-width: 3em;
+    max-width: 10em;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: aqua;
+}
+nav ul li a:hover {
+    background-color: aqua;
+}
+
+main {
+    align-content: center;
+}
+main h2 {
+
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {
+
+}
+
+article {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+section.forecast {
+    display: none;
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #A7D49D;
+}

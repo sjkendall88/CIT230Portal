@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin City Weather Site">
+        <title>Franklin City Weather</title>
+        <link href="css/normalization.css" rel="Stylesheet">
+        <link href="css/smallgrid.css" rel="Stylesheet">
+        <link href="css/mediumgrid.css" rel="Stylesheet">
+        <link href="css/largegrid.css" rel="Stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body>
+        <header class="clearfix textleft">
+            <img class="clearfix" id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section class="clearfix textleft">
+                <h2 class="textleft">Franklin City Weather</h2>
+                <div class="textleft">We bring the best weather photos!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navgrid hide" id="smallButton" >
+                <li class="navitem1" id="home"><a href="Tri-City_Weather.html">Home</a></li>
+                <li class="navitem2" id="frank"><a href="franklin.html">Franklin</a></li>
+                <li class="navitem3" id="greville"><a href="#">Greenville</a></li>
+                <li class="navitem4" id="sprifield"><a href="#">Springfield</a></li>
+                <li class="navitem5" id="strm"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="navitem6" id="gally"><a href="gallerygrid.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- Start Working Here! -->
+        <main>
+            <section>
+                <h2>
+                    Thank you for submitting the Storm Form.
+                </h2>
+                    <p>
+                        Please continue to help keep your friends and neighbor's aware.
+                        Click on the page would like to visit in our sites.
+                    </p>
+            </section>
+        </main>
+        <!-- Done when you reach here -->
+        <footer>
+            <section>
+                Contact information
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy;2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/javascript.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/currentWeather.js">
+        </script>
+        <script src="scripts/windchill.js"></script>
+        <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+/* FlexBox Display for small Screens under 35rem */
+* {
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgba(0,0,0,0);
+}
+a {
+    display: flex;
+    justify-content: center;
+    padding: .8rem;
+}
+button {
+    display: flex;
+    justify-content: flex-start;
+}
+.forcast {
+    display: none;
+}
+img {
+    width: 98%;
+}
+#logo {
+    max-width: 200px;
+    height: auto;
+    width: 33%;
+}
+body {
+    font-family: 'Playfair Display SC', serif;
+    background-image: url(../images/abstract-arctic-art-326240.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .25px;
+}
+header {}
+header>section {
+    padding: 0;
+}
+nav {
+    padding:0;
+    background-color: darkseagreen;
+}
+nav button {
+    color: grey;
+    background-color: rgba(0,0,0,0.3);
+    padding: 1rem;
+}
+nav li {
+    list-style-type: none;
+}
+nav li a {
+    color: aliceblue;
+    text-decoration: none;
+    flex-shrink: 1;
+}
+nav ul.hide {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a.active {
+    background-color: rgba(0,0,0,0.2);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+main {}
+
+figcaption {
+    font-size: 12px;
+}
+
+footer {}
+
+/*--------------- ClearFix------------------*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

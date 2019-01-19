@@ -1,0 +1,48 @@
+* { margin:0; box-sizing: border-box; }
+
+nav ul{
+    list-style-type:none;
+    margin:auto;
+}
+
+nav li{
+    display:inline;
+
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: auto;
+}
+
+header > title {
+    text-align: center;
+}
+
+#logo {
+    max-width: 300px;
+    height: auto;
+}
+
+header, footer, footer a {
+    text-align: center;
+    color: #36453B;
+}
+
+img {
+    resize: relative;
+}
+
+aside {
+    float:right;
+    word-wrap: normal;
+}
+
+color {
+    color: #A7D49D;
+    color: #F4E04D;
+    color: #AD2E24;
+    color; #545e75;
+    color; #36453B;
+}

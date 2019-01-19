@@ -1,0 +1,195 @@
+/*-------------- Universal ----------------*/
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: .25em;
+    align-content: center;
+    list-style-type: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*----------------- Body -------------------*/
+body {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .25px;
+    display: block;
+}
+/*---------------- Header ------------------*/
+header {}
+.gridHead {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+header img {
+    width: 100%;
+    min-width: 100px;
+}
+header section {}
+/*-------------- Navigation ----------------*/
+nav {
+    background-color: green;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: darkgrey;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul.hide {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 2%;
+    padding: 0;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li a.active {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+/*----------------- Main -------------------*/
+main {
+    text-align: center;
+    max-width: 30rem;
+}
+.story {
+    grid-column: 1;
+    box-shadow: 6px 6px rgba(38,106,46, 0.6);
+    border: 2px solid #266a2e;
+    height: 100%;
+    margin: 15px 0;
+}
+main img {
+    width: 95%;
+    padding: 0;
+}
+figcaption:hover {
+    text-shadow: 1px 1px rgba(38,106,46, 0.6);
+}
+figure img:hover {
+    box-shadow: 6px 6px rgba(38,106,46, 0.6);
+}
+figure {
+    margin: auto;
+    padding: .2rem;
+}
+figcaption {
+    margin: .2rem;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+#weaIcon {
+    max-width: 300px;
+}
+main section.forecast {
+    display: none;
+}
+article.TCW {
+    display: none;
+}
+/*----------------- form -------------------*/
+form fieldset {
+    display: block;
+    text-align: left;
+    width: 90%;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: green;
+    margin: 0 1rem;
+    padding: 1rem 0.5rem;
+}
+form label {
+    display:block;
+    text-align: left;
+    padding-top: .5rem;
+}
+form label input, form select, form textarea {
+    display: block;
+    font-size: 1rem;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(204,204,204,0.6);
+}
+input.dropdwn {
+    -webkit-appearance: none;
+}
+form label.select {
+    display: inline-block;
+    text-align: left;
+    padding: .75rem 0;
+    width: 10rem;
+}
+form div.select {
+    display: block;
+    text-align: inherit;
+}
+form input.select {
+    display: inline-block;
+    text-align: left;
+    padding: .75rem 0;
+}
+form input.subBut {
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    margin: 0 0 1.5rem 3%;
+    width: 96%;
+    max-width: 20rem;
+}
+input[type="radio"] {
+    display: inline-block;
+    width: 5%;
+    transform: scale(2);
+}
+form label input:required {
+    border-left: red solid 6px;
+}
+form label input:required:valid {
+    border-left: green solid 6px;
+}
+/*---------------- Footer ------------------*/
+footer {
+    text-align: center;
+}
+footer section {}
+#return {
+    text-decoration: none;
+    color: mediumblue;
+}
+/*--------------- ClearFix------------------*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

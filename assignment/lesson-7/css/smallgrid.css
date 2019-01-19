@@ -1,0 +1,178 @@
+/* Grid Display for small Screens under 650px */
+* {
+    box-sizing: border-box;
+    padding: .6rem;
+    margin: .1rem;
+    justify-content: center;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.smallitemhead{ /* class=" smallitemhead"*/
+    grid-column: 1/3;
+}
+.smallitemfig { /* class="smallitemfig" */
+    grid-column: 1/3;
+}
+body {
+    font-family: 'Playfair Display SC', serif;
+    background-image: url(../images/abstract-arctic-art-326240.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .25px;
+}
+.textleft {
+    text-align: left;
+}
+header {}
+header>section {
+    padding: 0;
+}
+nav {
+    padding:0;
+    background-color: darkseagreen;
+}
+nav button {
+    color: grey;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem;
+}
+nav li {
+    list-style-type: none;
+}
+nav li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul.hide {
+    display:none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a.active {
+    background-color: rgba(0,0,0,0.2);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*-------------- Universal ----------------*/
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: .25em;
+    align-content: center;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*----------------- Body -------------------*/
+body {
+    font-family: 'Playfair Display SC', serif;
+    background-image: url(../images/abstract-arctic-art-326240.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .25px;
+    display: block;
+}
+/*---------------- Header ------------------*/
+header {}
+header img {
+    display:block;
+    float: left;
+    width: 50%;
+    height: auto;
+}
+header section {}
+/*-------------- Navigation ----------------*/
+nav {
+    text-align: left;
+    background-color: green;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: seagreen;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul.hide {
+    display:none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 2%;
+    padding: 0;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li a.active {
+    background-color: rgba(0,0,0,0.2);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+/*----------------- Main -------------------*/
+main {
+    text-align: center;
+    max-width: 30rem;
+}
+main img {
+    width: 100%;
+}
+figure {
+    margin: auto;
+    padding: .2rem;
+}
+figure img {
+    padding: 0;
+}
+figure img:hover {
+    box-shadow: 4px 4px rgba(38,106,46,0.8);
+}
+figcaption {
+    margin: .2rem;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+figcaption:hover {
+    text-shadow: 4px 4px rgba(38,106,46,0.8);
+}
+/*---------------- Footer ------------------*/
+footer {
+    text-align: center;
+}
+footer section {}
+#return {
+    text-decoration: none;
+    color: mediumblue;
+}
+/*--------------- ClearFix------------------*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

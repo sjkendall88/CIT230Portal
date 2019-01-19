@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gallery">
+        <title>Gallery</title>
+        <link href="css/normalization.css" rel="stylesheet">
+        <link href="css/smallgrid.css" rel="stylesheet">
+        <link href="css/mediumgrid.css" rel="stylesheet">
+        <link href="css/largegrid.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body>
+        <header class="clearfix textleft">
+            <img class="clearfix" id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section class="clearfix textleft">
+                <h2 class="textleft">Tri-City Gallery</h2>
+                <div class="textleft">We bring the best weather photos!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navgrid hide" id="smallButton" >
+                <li class="navitem1" id="home"><a href="Tri-City_Weather.html">Home</a></li>
+                <li class="navitem2" id="frank"><a href="franklin.html">Franklin</a></li>
+                <li class="navitem3" id="greville"><a href="#">Greenville</a></li>
+                <li class="navitem4" id="sprifield"><a href="#">Springfield</a></li>
+                <li class="navitem5" id="strm"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="navitem6" id="gally"><a href="#" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="grid">
+            <section id="Franklin" class="grid smallitemhead largeitemhead">
+                <h3 class="sectitemhead smallitemhead largeitemhead">Franklin</h3>
+                <figure class="sectitemleft smallitemfig largeitemfig1">
+                    <img src="images/franklin2.jpeg">
+                    <figcaption>Clear Day!</figcaption>
+                </figure>
+                <figure class="sectitemright smallitemfig largeitemfig2">
+                    <img src="images/franklin6.jpeg">
+                    <figcaption>Lightning</figcaption>
+                </figure>
+                <figure class="sectitemleft smallitemfig largeitemfig3">
+                    <img src="images/franklin4.jpeg">
+                    <figcaption>Amazing sunset!</figcaption>
+                </figure>
+                <figure class="sectitemright smallitemfig largeitemfig1">
+                    <img src="images/franklin3.jpeg">
+                    <figcaption>Sunny!</figcaption>
+                </figure>
+                <figure class="sectitemleft smallitemfig largeitemfig2">
+                    <img src="images/franklin5.jpeg">
+                    <figcaption>Slightly cloudy</figcaption>
+                </figure>
+                <figure class="sectitemright smallitemfig largeitemfig3">
+                    <img src="images/franklin1.jpeg">
+                    <figcaption>Yard of the month!</figcaption>
+                </figure>
+            </section>
+            <section id="Greenville" class="grid smallitemhead largeitemhead">
+                <h3 class="sectitemhead smallitemhead largeitemhead">Greenville</h3>
+                <picture class="smallitemfig">
+
+                </picture>
+            </section>
+            <section id="Springfield" class="grid smallitemhead largeitemhead">
+                <h3 class="sectitemhead smallitemhead largeitemhead">Springfield</h3>
+                <picture class="smallitemfig">
+
+                </picture>
+            </section>
+            <section id="Storms" class="grid smallitemhead largeitemhead">
+                <h3 class="sectitemhead smallitemhead largeitemhead">Storms</h3>
+                <picture class="smallitemfig">
+
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <section>
+                Contact information
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy;2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/javascript.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+/* ---------------- Grid Setup -------------- */
+.grid {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: .25fr 1fr 1fr 1fr 1fr .25fr;
+}
+.headgrid {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    margin: 0;
+}
+.navgrid {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+}
+.maingrid {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+
+}
+.footgrid {
+    grid-column: 1 / span 6;
+    grid-row: 4;
+}
+.rightside {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+    text-align: center;
+}
+.leftside {
+    grid-column: 5 / span 2;
+}
+.listItL1 {
+    align-content: center;
+}
+.listItL2 {
+    align-content: center;
+}
+.footgrid {
+    grid-row: 4;
+    margin: 0;
+}
+html, body {
+    margin: 10px;
+    background-color: #F8F8FF;
+}
+/* ---------------- Navi Setup -------------- */
+nav ul{
+    list-style-type:none;
+    margin:auto;
+}
+ul{
+    background-color: aliceblue;
+}
+nav ul li {
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+nav li{
+    display:inline;
+    list-style-type: none;
+    overflow: visible;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+li>ul {
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid black;
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: none;
+    clear: both;
+}
+nav ul li ul a:hover {
+    margin: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+nav ul li ul li a {
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    display: block;
+    font-weight: bold;
+}
+a {
+    padding: .5rem;
+    text-decoration: none;
+    color: darkslategrey;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+}
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: #004d4d;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: auto;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #3333ff;
+    color: whitesmoke;
+}
+
+img, figure {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+aside {
+    float:right;
+    word-wrap: normal;
+}
+
+footer {
+    clear:both;
+    font-size: 14px;
+}
+ul li {
+    background-color: aliceblue;
+    height: 30px;
+}
+
+
+

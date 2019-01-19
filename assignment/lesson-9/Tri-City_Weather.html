@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin City Weather Site">
+        <title>Tri-City Weather</title>
+        <link href="css/normalization.css" rel="stylesheet">
+        <link href="css/newsmall.css" rel="stylesheet">
+        <link href="css/newmedium.css" rel="stylesheet">
+        <link href="css/newlarge.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body class="clearfix">
+        <header class="clearfix gridHead">
+            <img id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section>
+                <h2>Tri-City Weather</h2>
+                <div>We bring the best weather photos!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="hide" id="smallButton" >
+                <li id="home"><a href="#" class="active">Home</a></li>
+                <li id="frank"><a href="franklin.html">Franklin</a></li>
+                <li id="greville"><a href="#">Greenville</a></li>
+                <li id="sprifield"><a href="#">Springfield</a></li>
+                <li class="storm" id="strm"><a class="storm" href="stormcenter.html">Storm Center</a></li>
+                <li id="gally"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+<!-- Start Here! -->
+        <main class="gridmain gridMidView">
+        <section class="story midView" id="weaStory">
+            <section id="story">
+                <h3 id="weatherStory">Weather Story</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <img id="weaImg" alt="header image" src="images/active-activity-adventure-547116.jpg">
+        </section>
+            <section class="story midView larView" id="townSect1">
+            <section>
+            <h2><span id="town1">Hobbitton</span></h2>
+            <h4><span id="motto1">Hi!</span>     </h4>
+            <p>
+                Year Found: <span id="yearFounded1"></span><br>
+                Population: <span id="curPop1"></span><br>
+            </p>
+             <section>
+                <h3>Weather Data</h3>
+                Average Rainfall: <span id="aveRainFall1"></span>
+            </section>
+            <section>
+                <h3>10 Day Forcast</h3>
+            </section>
+            <article>
+                <h3>City article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </article>
+            </section>
+            <img class="weaImg" id="frankImg" alt="Franklin" src="images/Franlin-Lake.png">
+        </section>
+            <section class="story midView larView" id="townSect2">
+            <section>
+            <h2><span id="town2">lo</span></h2>
+            <h4><span id="motto2">Hi!</span></h4>
+            <p>
+                Year Found: <span id="yearFounded2"></span><br>
+                Population: <span id="curPop2"></span><br>
+            </p>
+            <section>
+                <h3>Weather Data</h3>
+                Average Rainfall: <span id="aveRainFall2"></span>
+            </section>
+            <section>
+                <h3>10 Day Forcast</h3>
+            </section>
+            <article>
+                <h3>City Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </article>
+            </section>
+            <img class="weaImg" src="images/placeholder.png" alt="placeholder">
+        </section>
+            <section class="story midView larView" id="townSect3">
+            <section>
+            <h2><span id="town3">lo</span></h2>
+            <h4><span id="motto3">Hi!</span></h4>            <p>
+            Year Found: <span id="yearFounded3"></span><br>
+            Population: <span id="curPop3"></span><br>
+            </p>
+            <section>
+                <h3>Weather Data</h3>
+                <p>
+            Average Rainfall: <span id="aveRainFall3"></span>
+                </p>
+            </section>
+            <section>
+                <h3>10 Day Forcast</h3>
+            </section>
+            <article>
+                <h3>City Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img class="weaImg" src="images/placeholder.png" alt="placeholder">
+            </article>
+            </section>
+            <img class="weaImg" src="images/placeholder.png" alt="placeholder">
+        </section>
+    </main>
+<!-- Finished Here! -->
+    <footer class="clearfix">
+        <section>
+            Contact information
+            999.999.9999
+            123 Main St. Anytown, US 99999
+            Google Map
+        </section>
+        <section>&copy;2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+        </section>
+    </footer>
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/currentWeather.js">
+    </script>
+    <script src="scripts/towndata.js"></script>
+    <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+</html>

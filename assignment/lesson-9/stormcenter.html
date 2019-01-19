@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin City Weather Site">
+        <title>Storm Center</title>
+        <link href="css/normalization.css" rel="stylesheet">
+        <link href="css/newsmall.css" rel="stylesheet">
+        <link href="css/newmedium.css" rel="stylesheet">
+        <link href="css/newlarge.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body Class="clearfix">
+        <header class="clearfix gridHead">
+            <img id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section>
+                <h2>Storm Center</h2>
+                <div>We bring the best weather photos!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="hide" id="smallButton" >
+                <li id="home"><a href="Tri-City_Weather.html">Home</a></li>
+                <li id="frank"><a href="franklin.html">Franklin</a></li>
+                <li id="greville"><a href="#">Greenville</a></li>
+                <li id="sprifield"><a href="#">Springfield</a></li>
+                <li class="storm" id="strm"><a href="#" class="active">Storm Center</a></li>
+                <li id="gally"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- Start Working Here! -->
+        <main>
+            <form name="stormCent" method="get" action="Thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>
+                        Full Name* <input name="name" id="fullName" type="text" pattern="[A-Z a-z]{5,}" placeholder="Full Name" required>
+                    </label>
+                    <label>
+                        Email <input name="email" id="email" type="email" placeholder="Please enter your email">
+                    </label>
+                    <label>
+                        Phone Number* <input name="phone" id="phone#" type="tel" size="10" placeholder="1234567890" required>
+                    </label>
+                    <label>
+                        Zip Code* <input name="zip" id="zipCode" type="text" size="8" placeholder="Zipcode" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label>Date of Storm <input name="stormDate" id="stormDate" type="date" class="dropdwn"></label>
+                    <label>Type of Storm <input name="stormType" list="stormType" placeholder="Storm Type">
+                        <datalist id="stormType">
+                            <option value="Flash-Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Lightning">
+                            <option value="Rain">
+                            <option value="Snow">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist></label>
+                    <label>How severe is the Storm?<br> 0<input class="select" name="stormSeverity" id="stormSeverity" type="range" min="0" max="10" step="1">10
+                    </label>
+                    <label>Where is it located? <select name="stormRegion" id="stormRegion" class="dropdwn">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select></label>
+                    <div class="select">Are you in Danger?</div>
+                        <label class="select"><input type="radio" name="dangerLevel" value="Yes"> Yes</label><br>
+                        <label class="select">
+                            <input type="radio" name="dangerLevel" value="maybe"> Maybe
+                        </label><br>
+                        <label class="select">
+                            <input type="radio" name="dangerLevel" value="no"> No
+                        </label><br>
+
+                    <label>Any more information you would like to provide? <textarea name="moreInfo" rows="5" placeholder="Please offer additional information for your concerns."></textarea></label>
+                </fieldset>
+                <input class="subBut" type="submit" value="Share the Weather">
+            </form>
+        </main>
+        <!-- Done when you reach here -->
+        <footer>
+            <section>
+                Contact information
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy;2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/javascript.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/currentWeather.js">
+        </script>
+        <script src="scripts/windchill.js"></script>
+        <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+</html>

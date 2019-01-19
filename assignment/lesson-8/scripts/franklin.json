@@ -1,0 +1,145 @@
+{
+    "Version": 1,
+    "Key": "33958_PC",
+    "Type": "PostalCode",
+    "Rank": 85,
+    "LocalizedName": "Franklin",
+    "EnglishName": "Franklin",
+    "PrimaryPostalCode": "77856",
+    "Region": {
+        "ID": "NAM",
+        "LocalizedName": "North America",
+        "EnglishName": "North America"
+    },
+    "Country": {
+        "ID": "US",
+        "LocalizedName": "United States",
+        "EnglishName": "United States"
+    },
+    "AdministrativeArea": {
+        "ID": "TX",
+        "LocalizedName": "Texas",
+        "EnglishName": "Texas",
+        "Level": 1,
+        "LocalizedType": "State",
+        "EnglishType": "State",
+        "CountryID": "US"
+    },
+    "TimeZone": {
+        "Code": "CDT",
+        "Name": "America/Chicago",
+        "GmtOffset": -5,
+        "IsDaylightSaving": true,
+        "NextOffsetChange": "2018-11-04T07:00:00Z"
+    },
+    "GeoPosition": {
+        "Latitude": 31.076,
+        "Longitude": -96.418,
+        "Elevation": {
+            "Metric": {
+                "Value": 126,
+                "Unit": "m",
+                "UnitType": 5
+            },
+            "Imperial": {
+                "Value": 413,
+                "Unit": "ft",
+                "UnitType": 0
+            }
+        }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+        "Key": "335794",
+        "LocalizedName": "Franklin",
+        "EnglishName": "Franklin"
+    },
+    "SupplementalAdminAreas": [
+        {
+            "Level": 2,
+            "LocalizedName": "Robertson",
+            "EnglishName": "Robertson"
+        }
+    ],
+    "DataSets": [
+        "Alerts",
+        "DailyAirQualityForecast",
+        "DailyPollenForecast",
+        "ForecastConfidence",
+        "MinuteCast"
+    ],
+    "Details": {
+        "Key": "33958_PC",
+        "StationCode": "TX7856",
+        "StationGmtOffset": -6,
+        "BandMap": "USTXE",
+        "Climo": "KLHB",
+        "LocalRadar": "KHOO",
+        "MediaRegion": "SC",
+        "Metar": "KLHB",
+        "NXMetro": "",
+        "NXState": "TXE",
+        "Population": null,
+        "PrimaryWarningCountyCode": "TXC395",
+        "PrimaryWarningZoneCode": "TXZ175",
+        "Satellite": "TXE",
+        "Synoptic": "72256",
+        "MarineStation": "",
+        "MarineStationGMTOffset": null,
+        "VideoCode": "ACT",
+        "DMA": {
+            "ID": "625",
+            "EnglishName": "Waco-Temple-Bryan, TX"
+        },
+        "PartnerID": null,
+        "Sources": [
+            {
+                "DataType": "Alerts",
+                "Source": "U.S. National Weather Service",
+                "SourceId": 2
+            },
+            {
+                "DataType": "CurrentConditions",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "DailyAirQualityForecast",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "DailyForecast",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "DailyPollenForecast",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "ForecastConfidence",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "HourlyForecast",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "MinuteCast",
+                "Source": "AccuWeather",
+                "SourceId": 1
+            },
+            {
+                "DataType": "Severe Weather Push Notifications",
+                "Source": "U.S. National Weather Service",
+                "SourceId": 2
+            }
+        ],
+        "CanonicalPostalCode": "77856",
+        "CanonicalLocationKey": "335794"
+    }
+}

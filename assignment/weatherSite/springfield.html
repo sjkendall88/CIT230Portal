@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin City Weather Site">
+        <title>Springfield City Weather</title>
+        <link href="css/normalization.css" rel="stylesheet">
+        <link href="css/newsmall.css" rel="stylesheet">
+        <link href="css/newmedium.css" rel="stylesheet">
+        <link href="css/newlarge.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body class="clearfix">
+        <header class="clearfix gridHead">
+            <img id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section>
+                <h2>Tri-City Weather</h2>
+                <div>We bring the best weather and photos!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="hide" id="smallButton">
+                <li class="" id="home"><a class="" href="Tri-City_Weather.html">Home</a></li>
+                <li class="" id="frank"><a class="" href="franklin.html">Franklin</a></li>
+                <li class="" id="greville"><a class="" href="greenville.html">Greenville</a></li>
+                <li class="" id="sprifield"><a class="" href="springfield.html">Springfield</a></li>
+                <li class="" id="strm"><a class="" href="stormcenter.html">Storm Center</a></li>
+                <li class="" id="gally"><a class="" href="gallery.html">Gallery</a></li>
+            </ul>
+            <img src="images/franklin-original.jpg" alt="franklin" srcset="images/franksmall.jpg 300w, images/frankmed.jpg 700w, images/franklarge.jpg 1200w" sizes="95vw">
+        </nav>
+        <!-- Start Working Here! -->
+        <main>
+            <section class="frankMidView">
+                <div class="frankMidHead">
+                    <h2><span id="town1">Springfield</span>City Weather</h2>
+                    <div><span id="motto1">We bring the best weather photos!</span></div>
+                </div>
+                <figure class="frankMidHead">
+                    <img src="images/springfield/spring2.jpg" alt="City Sign">
+                </figure>
+            </section>
+            <section class="frankMidView">
+                <h3 class="frankMidHead">Weather Summary</h3>
+                <div class="clearfix">
+                    <ul class="col-s-5">
+                        <li>High: <span id="high">90</span>&deg;F</li>
+                        <li>Low: <span id="low">66</span>&deg;F</li>
+                        <li>Chance of Precipitation:<span id="precip">0</span> &#37;</li>
+                        <li>Wind: <span id="wSpeed">5</span> mph from the <span id="direction">South West</span></li>
+                        <li>Windchill: <span id="windChill">5</span>&deg;F</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2><span id="weaDisc">Sunny</span></h2>
+                    <picture>
+                        <img src="images/placeholder.png" alt="current weather" id="weaIcon">
+                    </picture>
+                </div>
+            </section>
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <article>
+                <h2>This Day in History!</h2>
+                <h3>On May 23, 1915 Italy declares war on Austria-Hungary</h3>
+                <img src="images/springfield/spring3.jpg" alt="Historic Home">
+                <p>
+                    Sed dictum mollis metus eget placerat. Integer vel egestas elit. Pellentesque aliquam leo eu nibh aliquam fringilla. Aenean cursus nibh ac neque rhoncus posuere. Aenean commodo mauris a ipsum lacinia accumsan. Phasellus non justo ullamcorper, eleifend mi in, eleifend ex. Mauris sed varius massa. Fusce mattis laoreet maximus. Ut sollicitudin tellus fringilla sem fringilla, at tempor sem scelerisque. Aenean quis diam fermentum, placerat justo vitae, scelerisque justo. Aliquam egestas, nisl id scelerisque gravida, lacus urna maximus dolor, ut sodales nisl urna at tellus.
+                </p><br>
+                <p>
+                    Praesent lobortis consequat sollicitudin. Maecenas sit amet maximus leo, et porta nisi. Quisque aliquam pulvinar eros quis accumsan. Donec scelerisque felis nec blandit tempor. Etiam egestas velit risus, vitae sagittis enim dignissim at. Nullam mattis vitae felis vel hendrerit. Donec sit amet sapien ut nunc finibus varius vel sit amet neque. Curabitur auctor lorem ut blandit rhoncus. Pellentesque congue lectus et lobortis ultrices. Nulla sem sapien, imperdiet at faucibus eget, elementum et est. Integer vehicula facilisis turpis, ac posuere mauris tincidunt non. Morbi semper neque ut sapien imperdiet, non condimentum velit vulputate. Suspendisse faucibus varius quam ut vehicula. Quisque tempor neque accumsan bibendum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p> <br>
+
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi viverra felis tellus, eget tempus augue vestibulum quis. Proin arcu magna, molestie ac porta vitae, euismod vel arcu. Suspendisse gravida nec enim id congue. Nulla facilisi. Aliquam et mi non mi vehicula ultrices. Curabitur ac vestibulum arcu, at dapibus leo.
+                </p> <br>
+
+                <p>
+                    Integer ut aliquam risus, ac accumsan tellus. Nullam tincidunt laoreet sapien at finibus. Nam nec orci vel eros hendrerit tincidunt et quis velit. Ut aliquam libero nec erat porttitor tristique. Sed pharetra pretium finibus. Nullam tincidunt non leo sed cursus. Integer blandit, velit vitae vulputate interdum, ex diam condimentum leo, sit amet dignissim dolor arcu eu odio. Integer dignissim nibh augue, non fermentum sapien accumsan quis. Aliquam tempus nisl nec dolor gravida volutpat. Phasellus mi est, suscipit at faucibus ut, condimentum vel mauris. Maecenas quis elit lorem. Vivamus rutrum justo vitae rhoncus sodales. Phasellus orci metus, fermentum non nisi ac, aliquam consequat justo. Donec pretium dolor ac nunc faucibus, ut consequat eros euismod. Duis a blandit est.
+                </p> <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra ultricies laoreet. Nam vehicula porta sollicitudin. In vitae elit lorem. Suspendisse tristique sed nibh in porttitor. Quisque accumsan, tortor sed eleifend varius, nisl eros vehicula massa, vel convallis metus ipsum eu sem. Nunc iaculis velit nulla, vitae malesuada turpis ullamcorper id. Etiam quis sapien eros. Proin et purus sem. Aliquam at luctus est, et auctor massa. Sed blandit lectus non magna condimentum, in mattis leo suscipit. Quisque quam erat, tempus ut scelerisque vitae, gravida a est. Duis volutpat velit ac sem blandit molestie a vitae arcu. Nulla facilisi. Etiam at erat fermentum quam sodales volutpat ac et urna. Sed rutrum odio et rhoncus efficitur.
+                </p>
+            </article>
+        </main>
+        <!-- Done when you reach here -->
+        <footer>
+            <section>
+                Contact information
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy;2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/javascript.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/springWeather.js"></script>
+        <script src="scripts/springTown.js"></script>
+        <script src="scripts/active.js"></script>
+        <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+    <script>
+        // This changes the active tag to the current page
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#smallButton li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+    </script>
+</html>

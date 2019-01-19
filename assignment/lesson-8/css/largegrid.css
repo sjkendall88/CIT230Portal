@@ -1,0 +1,38 @@
+/* Grid Display for large Screens over 1000px */
+@media only screen and (min-width: 70em) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    .largeitemhead {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 1/4;
+    }
+    .largeitemfig1 {
+        grid-column: 1;
+    }
+    .largeitemfig2 {
+        grid-column: 2;
+    }
+    .largeitemfig3 {
+        grid-column: 3;
+    }
+    body {
+        max-width: 90%;
+        margin: auto;
+        align-content: center;
+    }
+
+    header {}
+
+    nav {}
+
+    main {}
+
+    footer {}
+}
+form label.select {
+    display: inline-block;
+    padding:  .4rem 0;
+}

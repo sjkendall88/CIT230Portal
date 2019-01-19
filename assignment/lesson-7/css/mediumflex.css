@@ -1,0 +1,57 @@
+/* FlexBox Display for small Screens under 67rem */
+@media only screen and (min-width: 37rem) {
+body {}
+    /*---------------- Header ------------------*/
+    header {
+        display: flex;
+    }
+    /*-------------- Navigation ----------------*/
+    nav {
+        background-color: green;
+    }
+    nav button {
+        display: none;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    nav ul.hide {
+        display: flex;    /*fix me*/
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        display: flex;
+        flex-grow: 1;
+        box-shadow: 4px 4px rgba(0,0,0,0.5);
+    }
+    nav ul li a {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        color: aliceblue;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    nav ul li a.active {
+        background-color: rgba(0,0,0,0.2);
+    }
+    nav ul li a:hover {
+        background-color: rgba(0,0,0,0.4);
+    }
+    main {
+        padding: 0 10%;
+        max-width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+    .forcast {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

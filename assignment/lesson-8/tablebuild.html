@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="tablebuild">
+        <title>Table Build</title>
+        <link href="css/normalization.css" rel="stylesheet">
+        <link href="css/smalltable.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>Table Build</h2>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">
+                        <h3>ACME Wildwest</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Period</th>
+                        <th>Sales</th>
+                        <th>Sales Goal</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Compiled <span class="currentDate"></span> by SKendall
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>August</td>
+                        <td>$3,590</td>
+                        <td>$4,000</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>$4,420</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>$4,870</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>$8,610</td>
+                        <td style="background-color: #628ca6; color: #fff;">$7,500</td>
+                    </tr>
+                    <tr>
+                        <td style="font-style: italic">Black Friday</td>
+                        <td colspan="2">$3,200</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>$6,820</td>
+                        <td>$7,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <section>
+                Contact information
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy;2018 | All Rights Reserved | Site Title | <div id="currentDate"></div>
+            </section>
+        </footer>
+        <script src="../lesson-7/scripts/currentDate.js"></script>
+        <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+</html>

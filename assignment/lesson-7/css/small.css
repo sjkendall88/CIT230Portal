@@ -1,0 +1,86 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: .25em;
+    align-content: center;
+}
+body {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display SC', serif;
+    background-image: url(../images/abstract-arctic-art-326240.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+main picture {}
+
+header, nav, main, footer {
+    width: 90%;
+}
+
+header {
+    height: 10%;
+    display:block;
+    padding-bottom: 2.5em;
+}
+header h1 {}
+header img {
+    display:block;
+    float: left;
+    width: 50%;
+    height: auto;
+}
+header.subheading {}
+nav {
+    clear: left;
+    background-color: #A7D49D;
+}
+nav button {
+
+}
+nav ul {
+    align-content: space-between;
+    list-style-type: none;
+}
+nav ul.hide{
+    display:none;
+}
+nav ul li {
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: aqua;
+}
+nav ul li a:hover {
+    background-color: aqua;
+}
+
+main {
+    align-content: center;
+}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {width: 75%; height: auto;}
+picture img {width: 75%; height: auto;}
+article {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+article img {width:75%; height: auto;}
+
+section.forecast {
+    display: none;
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #A7D49D;
+}

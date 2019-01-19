@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gallery">
+        <title>Gallery</title>
+        <link href="css/normalization.css" rel="stylesheet">
+        <link href="css/newsmall.css" rel="stylesheet">
+        <link href="css/newmedium.css" rel="stylesheet">
+        <link href="css/newlarge.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    </head>
+    <body class="clearfix">
+        <header class="clearfix gridHead">
+            <img id="logo" alt="logo image" src="images/weatherlogo.png">
+            <section>
+                <h2>Tri-City Weather</h2>
+                <div>We bring the best weather and photos!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="hide" id="smallButton">
+                <li id="home"><a class="" href="Tri-City_Weather.html">Home</a></li>
+                <li id="frank"><a class="" href="franklin.html">Franklin</a></li>
+                <li id="greville"><a class="" href="greenville.html">Greenville</a></li>
+                <li id="sprifield"><a class="" href="springfield.html">Springfield</a></li>
+                <li class="storm" id="strm"><a class="" href="stormcenter.html">Storm Center</a></li>
+                <li id="gally"><a class="" href="gallery.html">Gallery</a></li>
+            </ul>
+            <script src="scripts/active.js"></script>
+        </nav>
+        <main>
+            <h2>Gallery</h2>
+            <section class="frankMidView gridmain" id="Franklin">
+                <h3 class="frankMidHead gridHead">Franklin</h3>
+                <figure>
+                    <img src="images/franklin2.jpeg">
+                    <figcaption>Clear Day!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/franklin4.jpeg">
+                    <figcaption>Amazing sunset!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/franklin5.jpeg">
+                    <figcaption>Slightly cloudy</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/franklin6.jpeg">
+                    <figcaption>Lightning</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/franklin3.jpeg">
+                    <figcaption>Sunny!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/franklin1.jpeg">
+                    <figcaption>Yard of the month!</figcaption>
+                </figure>
+            </section>
+            <section class="frankMidView gridmain" id="Greenville">
+                <h3 class="frankMidHead gridHead">Greenville</h3>
+                <figure>
+                    <img src="images/greenville/green1.jpg" alt="river walkway">
+                    <figcaption>River walk-way</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/greenville/green2.jpg" alt="river bridge">
+                    <figcaption>River Bridge</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/greenville/green3.jpg" alt="main street">
+                    <figcaption>Main Street</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/greenville/green4.jpg" alt="river water fall">
+                    <figcaption>River WaterFall</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/greenville/green5.jpg" alt="clock tower">
+                    <figcaption>Clock Tower</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/greenville/green6.jpg" alt="old homoe">
+                    <figcaption>Historic Home</figcaption>
+                </figure>
+            </section>
+            <section class="frankMidView gridmain" id="Springfield">
+                <h3 class="frankMidHead gridHead">Springfield</h3>
+                <figure>
+                    <img src="images/springfield/spring1.jpg" alt="city view">
+                    <figcaption> City View!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/springfield/spring2.jpg" alt="city sign">
+                    <figcaption>City Sign</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/springfield/spring3.jpg" alt="historic home">
+                    <figcaption>Historic Home</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/springfield/spring4.jpg" alt="train">
+                    <figcaption>Train</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/springfield/spring5.jpg" alt="park">
+                    <figcaption>Park</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/springfield/spring6.jpg" alt="church">
+                    <figcaption>Church</figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer class="clearfix">
+            <section>
+                Contact information
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section>&copy;2018 | All Rights Reserved | Site Title | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/javascript.js"></script>
+        <script src="scripts/currentDate.js"></script>
+        <script src="scripts/active.js"></script>
+        <a id ="return" href="https://sjkendall88.github.io/CIT230Portal/">CIT 230 Portal</a>
+    </body>
+    <script>
+        // This changes the active tag to the current page
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#smallButton li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+    </script>
+</html>
